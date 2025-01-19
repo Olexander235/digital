@@ -1,0 +1,662 @@
+@font-face{
+  font-family: "Canela";
+  src: url(./font/Canela-Regular.ttf) format(truetype);
+}
+
+
+
+*{   
+    margin: 0;  
+    padding: 0;      
+    border: 0;  
+    outline: 0;      
+    list-style: none;  
+    box-sizing: border-box;  
+    text-decoration: none;  
+    scroll-behavior: smooth;  
+}  
+
+
+:focus,
+:active{
+  outline: none;
+}
+
+a:focus,
+a:active{
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside{
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+body{
+    background-image: url(./img/Design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+}
+
+
+header {
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000;
+      padding: 10px 20px;
+      color: #fff;
+  }
+
+
+
+  nav {
+    flex: 1;
+    margin: 0 170px;
+   
+  }
+
+  nav ul {
+    display: flex;
+      list-style: none;
+      justify-content: flex-start;
+      gap: 20px;
+  }
+
+  nav ul li {
+    padding: 0 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+  }
+
+  nav ul li a:hover {
+    color: #d1ff00; /* Лимонно-зеленый цвет */
+  }
+
+  .contact-button {
+    background-color: #d1ff00;
+    /*Лимонно-зеленыйцвет*/border: none;
+    padding: 10px 40px;
+    color: white;
+    font-weight: bold;
+   
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-right: 50px;
+    
+}
+
+  .contact-button:hover {
+    background-color: #b1e600;
+  }
+
+
+
+
+.clock{
+  border-radius: 8px;
+  padding: 12px 48px;
+  width: 264px;
+  height: 52px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #d6ef0e;
+  background: none;
+  margin-top: 25px;
+}
+
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+
+}
+
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+  }
+
+  .section {
+    
+    padding: 20px;
+    
+}
+
+  .section1 {
+    width: 544px;
+    height: 585px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+
+  .section1 h2 {
+    margin-bottom: 10px;
+  }
+
+  .section1 p {
+    flex-grow: 1;
+    margin-bottom: 20px;
+  }
+
+  .section1 .buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+
+
+  .color{
+    padding: 10px 20px;
+    background-color: rgba(214, 239, 14, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .white{
+   
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .section1 .buttons button:hover {
+    background-color: #00b30c;
+  }
+
+  .section1 table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .section1 table th, .section1 table td {
+   
+    padding: 10px;
+    text-align: left;
+  }
+
+  .text{
+    width: 544px;
+height: 78px;
+gap: 0px;
+opacity: 0px;
+color: #fff;
+  }
+
+
+
+
+
+  .section2 {
+    width: 575px;
+    height: 637px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .section2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+  }
+
+  .section2 .clock {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  h1 span {
+    display: inline;
+  }
+
+  .white-text {
+    color: white;
+    width: 544px;
+    height: 231px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Canela;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 76.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  
+}
+
+  .green-text {
+    color: rgba(214, 239, 14, 1);
+    width: 544px;
+    height: 231px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Canela;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 76.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .circular {
+      width: 171px;
+      height: 171px;
+      border-radius: 50%;
+      display: flex;
+      position: relative;
+      top: -315px;
+      right: 200px;
+      
+}
+.circular path { fill: none; } 
+
+
+    .circular svg {
+    display: block;
+    overflow: visible;
+    color: #d1ff00;
+    }
+
+
+
+.clock{
+  display: flex;
+      position: relative;
+      top: -200px;
+      right: 2px;
+      border: 1px solid #708d13;
+      color: rgba(214, 239, 14, 1);
+      background-color: rgba(19, 30, 58, 1);
+      border-radius: 10px;
+      width: 450px;
+      height:100vh;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+#timer-block {
+  background-color: #001744;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#timer-block .btn {
+  background-color: #d4ff00;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  justify-content: center;
+}
+#timer-block .btn:hover {
+  background-color: #c4e600;
+}
+
+  
+
+
+
+
+
+
+
+
+  
+
+  .amazing-block {
+    text-align: center;
+    padding: 50px;
+    
+    
+      
+}
+
+.text-title{
+  display: flex;
+  margin: 0 180px;
+  
+  
+}
+
+.amazing-block h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: antiquewhite;
+}
+
+.contact-button1{
+  padding: 15px 30px;
+  background-color: rgba(214, 239, 14, 1);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+margin-top: 100px;
+margin-left: 400px;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.main-button:hover {
+    background-color: #45a049;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Это позволяет контейнерам адаптироваться */
+    gap: 10px; /* Отступы между контейнерами */
+    width: 1200px;
+    height: 498px;
+    margin: 0 auto;
+}
+
+.container-amazing {
+    width: 30%;
+    background: rgba(19, 30, 58, 1);
+    height: 498px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease; /* Плавный переход для увеличения контейнера */
+}
+
+.container-amazing:hover {
+    transform: scale(1.05); /* Увеличение контейнера при наведении */
+}
+
+.description-eth{
+  width: Hug (93px)px;
+height: Hug (24px)px;
+gap: 4px;
+opacity: 0px;
+color: #fff;
+margin: 0 auto;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.description {
+    margin: 15px 0;
+    width: 150px;
+height: 29px;
+gap: 0px;
+opacity: 0px;
+
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.action-button {
+    padding: 10px 20px;
+    width: Hug (168px)px;
+height: Fixed (48px)px;
+padding: 12px 40px 12px 40px;
+gap: 0px;
+margin-left: 100px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+
+    background-color: rgba(214, 239, 14, 1);
+    
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.action-button:hover {
+    background-color: #007B8C;
+}
+
+
+
+.footer {
+  padding: 92px 111px;
+}
+.footer-body {
+}
+.footer-up {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-up-info {
+  width: 272px;
+}
+.footer-info-txt {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #fff;
+}
+.footer-social {
+  max-width: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.footer-img {
+}
+.footer-up-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+}
+.footer-nav-block {
+}
+.footer-nav-tlt {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #fff;
+}
+.footer-block-items {
+  margin-top: 25px;
+}
+.footer-link {
+  font-family: "Inter", sans-serif);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #fff;
+  margin-top: 8px;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #9e9e9e;
+  margin-top: 50px;
+}
+.footer-down {
+  margin-top: 50px;
+}
+.footer-down-box {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-down-info {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #fff;
+}
+.footer-down-texts {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+.footer-down-txt {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #fff;
+}
+
+
+/* Стандартное оформление для ширины 1200px и больше */
+body {
+  font-size: 16px;
+}
+
+/* Адаптивность для экрана до 1024px */
+@media (max-width: 1024px) {
+  .container-wrapper {
+      flex-direction: column; /* Расположить блоки по вертикали */
+      align-items: center; /* Выравнивание по центру */
+      width: 100%; /* Занять всю ширину экрана */
+  }
+
+  .section1, .section2 {
+      width: 80%; /* Уменьшить ширину секций */
+  }
+
+  .amazing-block h2 {
+      font-size: 2rem; /* Уменьшить размер заголовка */
+  }
+
+  .contact-button1 {
+      margin-left: 0; /* Центрировать кнопку */
+      margin-top: 20px;
+  }
+}
+
+/* Адаптивность для экрана до 768px */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column; /* Заголовок в колонку */
+      align-items: center;
+      padding: 10px;
+  }
+
+  nav ul {
+      flex-direction: column; /* Вертикальное меню */
+      gap: 10px; /* Отступы между пунктами меню */
+  }
+
+  .container-wrapper {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .container-amazing {
+      width: 90%; /* Сузить контейнеры для мобильных устройств */
+      margin-bottom: 20px;
+  }
+
+  .clock {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+  }
+
+  .contact-button {
+      width: 100%; /* Широкая кнопка на мобильных */
+      margin: 10px 0;
+  }
+}
+
+/* Адаптивность для экрана до 480px */
+@media (max-width: 480px) {
+  .section1, .section2 {
+      width: 100%; /* Полная ширина */
+  }
+
+  .white-text, .green-text {
+      font-size: 1.5rem; /* Уменьшить размер текста */
+      line-height: 2rem;
+  }
+
+  .action-button {
+      width: 100%;
+      font-size: 0.9rem; /* Уменьшить размер шрифта кнопок */
+      padding: 10px;
+  }
+
+  .amazing-block h2 {
+      font-size: 1.8rem; /* Уменьшить заголовок */
+  }
+}
+
+/* Адаптивность для экрана до 320px */
+@media (max-width: 320px) {
+  body {
+      font-size: 14px; /* Уменьшить базовый размер шрифта */
+  }
+
+  header {
+      padding: 5px;
+  }
+
+  .contact-button1, .action-button {
+      font-size: 0.8rem;
+      padding: 8px;
+  }
+
+  .container-amazing {
+      width: 100%;
+  }
+
+  .text-title {
+      margin: 0 10px;
+      font-size: 1rem;
+  }
+}
